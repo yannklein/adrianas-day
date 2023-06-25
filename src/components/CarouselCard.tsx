@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import CardContent from '../interfaces';
 import CardVideo from './CardVideo';
 import CardImage from './CardImage';
+import CardLink from './CardLink';
 
 interface CardProps {
   content: CardContent,
@@ -17,7 +18,7 @@ function CarouselCard({ content, progress }: CardProps ) {
         {content.text}
         {content.video && <CardVideo src={content.video} />}
         {content.image && <CardImage src={content.image} />}
-        {content.subtext && <p>{content.subtext}</p>}
+        {content.link && <CardLink  link={content.link} />}
       </Card>
     </>
   );
