@@ -13,9 +13,8 @@ function Carousel() {
       effect={"cards"}
       grabCursor={true}
       modules={[EffectCards]}
-      className="mySwiper"
     >
-      { cards.map( (card, index) => <SwiperSlide key={`card${index}`}><CarouselCard content={card} /></SwiperSlide>)}
+      { cards.map( (card, index) => <SwiperSlide key={`card${index}`}><CarouselCard progress={index / cards.length} content={card} /></SwiperSlide>)}
     </Swiper>
     </div>
   );

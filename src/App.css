@@ -1,6 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction:  column;
   text-align: center;
+  background-color: #D9AFD9;
+  background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
 }
