@@ -27,7 +27,7 @@ const AppFrame = styled.div`
   background-color: #D9AFD9;
   background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
   overflow: hidden;
-  overscroll-behavior: none;
+  touch-action: none;
 `;
 
 export default App
