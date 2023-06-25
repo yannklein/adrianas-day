@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface CardLinkProps {
-  link: string
+  link: string[]
 }
 
 function CardLink({link}: CardLinkProps) {
