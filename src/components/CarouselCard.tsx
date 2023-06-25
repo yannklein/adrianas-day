@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-function CarouselCard(props: { content: number; progress: number }) {
+function CarouselCard(props: { content: string; progress: number }) {
   const { content, progress } = props;
   const hue: number = Math.round(200 + progress * 100);
 
