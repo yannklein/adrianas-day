@@ -1,13 +1,14 @@
 import Carousel from './components/Carousel'
 import styled from 'styled-components';
+import appData from './assets/app-data.json'
 
 function App() {
 
   return (
     <AppFrame>
-      <HiddenMsg >I love you </HiddenMsg>
+      <HiddenMsg >{appData.header}</HiddenMsg>
       <Carousel />
-      <p>Made with ❤️ by Yann</p>
+      <p>{appData.footer}</p>
     </AppFrame>
   )
 }
